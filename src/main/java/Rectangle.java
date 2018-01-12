@@ -8,4 +8,29 @@ public class Rectangle {
 	 *  - A method named getArea() that returns the are of this rectangle A = l*w
 	 *  - A method named getPerimeter() that returns the perimeter of this rectangle P = 2 * (l+w)
 	 */
+	double width = 1;
+	double height = 1;
+
+	Rectangle(){
+		width = 1;
+		height = 1;
+	}
+
+	Rectangle(double inputHeight,double inputWidth){
+		width = inputWidth;
+		height = inputHeight;
+	}
+
+	public double getWidth(){
+		return(width);
+	}
+	public double getHeight(){
+		return(height);
+	}
+	public double getArea(){
+		return(width*height);
+	}
+	public double getPerimeter(){
+		return (2*(width+height));
+	}
 }

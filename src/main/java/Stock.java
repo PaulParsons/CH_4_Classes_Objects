@@ -12,4 +12,51 @@ public class Stock {
 	 *  - A method named getChangePercent() that returns the percentage changed from previousClosingPrice to CurrentPrice
 	 *    precentChange = ((currentPrice - closingPrice) / currentPrice) * 100
 	 */
+
+	String symbol;
+	String name;
+	double previousClosingPrice = 0.0;
+	double currentPrice = 0.0;
+
+	Stock(String inputSymbol, String inputName){
+		symbol = inputSymbol;
+		name = inputName;
+	}
+	public String getSymbol(){
+		return (symbol);
+	}
+
+	public String getName(){
+		return (name);
+	}
+
+	public double getPreviousClosingPrice(){
+		return(previousClosingPrice);
+	}
+
+	public double getCurrentPrice(){
+		return(currentPrice);
+	}
+
+	public void setPreviousClosingPrice(double prevPrice){
+		previousClosingPrice = prevPrice;
+	}
+
+	public void setCurrentPrice(double currPrice){
+		currentPrice = currPrice;
+	}
+
+	public double setCurrentPrice(){
+		return(currentPrice);
+	}
+
+	public double getChangePercent(){
+		double percentChange = ((currentPrice - previousClosingPrice) / currentPrice) * 100;
+		return (percentChange);
+	}
 }
+
+
+
+
+
